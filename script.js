@@ -123,4 +123,43 @@ behavior:"smooth"
 
 });
 
+}// Surprise Button
+
+document.getElementById("surpriseBtn").onclick=function(){
+
+document.getElementById("surpriseBox").style.display="block";
+
+for(let i=0;i<70;i++){
+
+createHeart();
+
 }
+
+};
+
+
+// Countdown
+
+const startDate=new Date("2025-01-01");
+
+function updateTimer(){
+
+const now=new Date();
+
+const diff=now-startDate;
+
+const days=Math.floor(diff/(1000*60*60*24));
+
+const hours=Math.floor((diff/(1000*60*60))%24);
+
+const mins=Math.floor((diff/(1000*60))%60);
+
+document.getElementById("loveTimer").innerHTML=
+
+days+" Days ❤️ "+hours+" Hours ❤️ "+mins+" Minutes";
+
+}
+
+setInterval(updateTimer,1000);
+
+updateTimer();
