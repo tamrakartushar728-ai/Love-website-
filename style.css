@@ -136,4 +136,142 @@ max-width:520px;
 
 .final button{
 margin-top:35px;
+}*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#ffd6e5,#ff8eb5,#f46f9c);
+overflow-x:hidden;
+color:white;
+}
+
+section{
+padding:80px 25px;
+text-align:center;
+position:relative;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:58px;
+color:#7b1238;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-family:'Dancing Script',cursive;
+font-size:40px;
+font-weight:700;
+margin-bottom:15px;
+color:#b2185b;
+}
+
+.hero p{
+font-size:22px;
+max-width:600px;
+line-height:1.7;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+button{
+padding:18px 45px;
+font-size:22px;
+border-radius:50px;
+border:3px solid #7b1238;
+background:white;
+color:#7b1238;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+button:hover{
+transform:scale(1.08);
+background:#7b1238;
+color:white;
+}
+
+.story h1,
+.letter h1,
+.musicBox h2,
+.final h2{
+font-family:'Playfair Display',serif;
+font-size:46px;
+margin-bottom:40px;
+color:#7b1238;
+}
+
+.card{
+width:95%;
+max-width:450px;
+margin:40px auto;
+background:white;
+padding:18px;
+border-radius:18px;
+box-shadow:0 12px 35px rgba(0,0,0,.2);
+transform:rotate(-2deg);
+}
+
+.card:nth-child(even){
+transform:rotate(2deg);
+}
+
+.card img{
+width:100%;
+border-radius:12px;
+display:block;
+}
+
+.card p{
+margin-top:18px;
+font-family:'Dancing Script',cursive;
+font-size:30px;
+color:#7b1238;
+}
+
+.letter{
+font-size:24px;
+line-height:2;
+max-width:850px;
+margin:auto;
+}
+
+.musicBox{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(8px);
+border-radius:25px;
+margin:50px auto;
+width:92%;
+padding:40px;
+}
+
+.musicBox button{
+display:block;
+margin:20px auto;
+width:90%;
+max-width:520px;
+}
+
+.final button{
+margin-top:35px;
 }
