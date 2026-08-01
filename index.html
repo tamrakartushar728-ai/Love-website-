@@ -1,118 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap');
 
-<title>For My Love ❤️</title>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<link rel="stylesheet" href="style.css">
+        body {
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            font-family: 'Poppins', sans-serif;
+            color: #5c1d32;
+            text-align: center;
+            padding: 20px 10px;
+            overflow-x: hidden;
+        }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        /* Hero Header */
+        .title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        .subtitle {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        /* Polaroid Photo Cards */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .polaroid {
+            background: #ffffff;
+            padding: 15px 15px 25px 15px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            max-width: 320px;
+            width: 100%;
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .polaroid:nth-child(even) {
+            transform: rotate(2deg);
+        }
+
+        .polaroid img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .caption {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.4rem;
+            margin-top: 15px;
+            color: #701d36;
+        }
+
+        /* Text Section */
+        .message-box {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(5px);
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 400px;
+            margin: 30px auto;
+            text-align: left;
+            line-height: 1.6;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .message-box h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #801d38;
+        }
+
+        /* Buttons Section */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+        .btn {
+            background: #ffffff;
+            color: #801d38;
+            border: 2px solid #801d38;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 85%;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #801d38;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #801d38;
+            color: white;
+            font-size: 1.2rem;
+            padding: 15px 30px;
+        }
+
+        .btn-primary:hover {
+            background: #5c1328;
+        }
+
+        /* Hidden Audio */
+        audio {
+            display: none;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="hearts"></div>
+    <!-- Header Section -->
+    <h1 class="title">Shital,</h1>
+    <p class="subtitle">before anything else... I just need to know one thing.</p>
 
-<section class="hero">
+    <!-- Polaroid Photo Section -->
+    <h2 style="margin-top: 40px;">A few of my favorite moments with you 💕</h2>
+    
+    <div class="card-container">
+        <!-- Photo 1 -->
+        <div class="polaroid">
+            <img src="https://via.placeholder.com/300x350/ffb6c1/000000?text=Your+Screenshot+1" alt="Moment 1">
+            <p class="caption">Do you remember when we started talking? ❤️</p>
+        </div>
 
-<h1>Shital,</h1>
+        <!-- Photo 2 -->
+        <div class="polaroid">
+            <img src="https://via.placeholder.com/300x350/ffb6c1/000000?text=Your+Screenshot+2" alt="Moment 2">
+            <p class="caption">I proposed to you and you said yes! 🥰</p>
+        </div>
 
-<h2>Before anything else...</h2>
+        <!-- Photo 3 -->
+        <div class="polaroid">
+            <img src="https://via.placeholder.com/300x350/ffb6c1/000000?text=Your+Screenshot+3" alt="Moment 3">
+            <p class="caption">Our best moment together 💕</p>
+        </div>
+    </div>
 
-<p>I just need to know one thing ❤️</p>
+    <!-- Message Box -->
+    <div class="message-box">
+        <h2>my intentions:</h2>
+        <p>Ever since you came into my life, everything has felt so much better. I genuinely feel happier and I like the person I'm becoming because of you. ✨</p>
+        <br>
+        <p>Kya bataun yaar... words hi nahi hain batane ke liye ki tumne meri life kitni change kar di hai. 🥺❤️</p>
+        <br>
+        <p>I love you so, so much. Thank you for being in my life. I just hope you'll stay with me forever. ❤️♾️</p>
+    </div>
 
-<div class="buttons">
+    <!-- Music Player Buttons -->
+    <p class="subtitle">before you answer, pick a song to play:</p>
+    <div class="btn-container">
+        <button class="btn" onclick="playAudio('song1')">🎵 If you're saying yes, play this</button>
+        <button class="btn" onclick="playAudio('song2')">🎵 If you're not ready yet, play this</button>
+    </div>
 
-<button id="yesBtn">
-Yes
-</button>
+    <!-- Final Proposal Action Button -->
+    <div style="margin: 40px 0;">
+        <button class="btn btn-primary" onclick="alert('Yay! ❤️ I love you!')">Yes, I'm yours</button>
+    </div>
 
-<button id="yesBtn2">
-Yes
-</button>
+    <!-- Audio Elements (Apne song files ka link yahan dalein) -->
+    <audio id="song1" src="song1.mp3"></audio>
+    <audio id="song2" src="song2.mp3"></audio>
 
-</div>
-
-</section>
-
-<section class="story">
-
-<h1>A few of my favorite moments with you</h1>
-
-<div class="card">
-<img src="images/photo1.jpg">
-<p>Do you remember this day? ❤️</p>
-</div>
-
-<div class="card">
-<img src="images/photo2.jpg">
-<p>This moment will always stay in my heart.</p>
-</div>
-
-<div class="card">
-<img src="images/photo3.jpg">
-<p>My favourite smile. ❤️</p>
-</div>
-
-</section>
-
-<section class="letter">
-
-<h1>My Intentions</h1>
-
-<p>
-Ever since you came into my life,
-everything has become beautiful.
-You are my peace,
-my happiness,
-and my forever. ❤️
-</p>
-
-<p>
-Please never leave me.
-I honestly can't imagine my life without you.
-</p>
-
-</section>
-
-<section class="musicBox">
-
-<h2>Choose a song</h2>
-
-<button onclick="playYesSong()">
-🎵 If you're saying YES
-</button>
-
-<button onclick="playWaitSong()">
-🎵 If you're not ready yet
-</button>
-
-<audio id="yesSong">
-<source src="music/yes.mp3" type="audio/mp3">
-</audio>
-
-<audio id="waitSong">
-<source src="music/wait.mp3" type="audio/mp3">
-</audio>
-
-</section>
-
-<section class="final">
-
-<h2>Will you be mine forever?</h2>
-
-<button id="proposal">
-Yes, I'm Yours ❤️
-</button>
-
-</section>
-
-<script src="script.js"></script>
+    <script>
+        function playAudio(songId) {
+            // Stop previous audio if playing
+            document.querySelectorAll('audio').forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
+            });
+            // Play selected audio
+            var audio = document.getElementById(songId);
+            if(audio) {
+                audio.play();
+            }
+        }
+    </script>
 
 </body>
-
-</html>
+          </html>
